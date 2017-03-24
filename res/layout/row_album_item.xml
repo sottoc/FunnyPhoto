@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearlayoutMain" android:background="@drawable/border" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/container" android:background="@drawable/ic_folder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <ImageView android:id="@+id/imageView1" android:background="@drawable/ic_folder" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="11.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/albumName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="Large Text" />
+</LinearLayout>

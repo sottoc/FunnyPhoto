@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="8.0" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layoutButtons" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="4.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sublayoutButtons" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layoutGallery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:gravity="center" android:id="@+id/imageViewGallery" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_gallery" android:layout_weight="1.0" android:onClick="onGallery" />
+                <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewGallery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gallery" android:singleLine="false" android:layout_alignParentBottom="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layoutCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:gravity="center" android:id="@+id/imageViewCamera" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_camera" android:layout_weight="1.0" android:onClick="onCamera" />
+                <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Camera" android:singleLine="false" android:layout_alignParentBottom="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layoutViewCreations" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <ImageView android:gravity="center" android:id="@+id/imageViewCreations" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_your_creation" android:layout_weight="1.0" android:onClick="onViewCreation" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewCamera_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Creations" android:singleLine="false" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="@drawable/bg_ads_addwatermark" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/adstitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/top_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="More Apps By Dexati (Ads)" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/adsbottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="8.0sp" android:textColor="#ffffffff" android:id="@+id/bottom_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="About Ads" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/allads" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0" android:layout_above="@+id/adsbottom" android:layout_below="@+id/adstitle">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lowads" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <RelativeLayout android:id="@+id/ad1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd1">
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@+id/textLabel1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="3D Camera" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@+id/imageLabel1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/camerapano" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@+id/textLabel1" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/ad2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd2">
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@+id/textLabel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Collage Mania" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@+id/imageLabel2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/collagemania" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@+id/textLabel2" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/ad3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd3">
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@+id/textLabel3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Fruit Faces" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@+id/imageLabel3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/fruit" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@+id/textLabel3" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lowads2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <RelativeLayout android:id="@+id/ad4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd4">
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@+id/textLabel4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Photo Rain Drops" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@+id/imageLabel4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/raindrops" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@+id/textLabel4" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/ad5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd5">
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@+id/textLabel5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Make Me Tall" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@+id/imageLabel5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/maketall" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@+id/textLabel5" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/ad6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd6">
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@+id/textLabel6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Dreamy Photos" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@+id/imageLabel6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dreamy" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@+id/textLabel6" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
